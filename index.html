@@ -9,7 +9,7 @@
 			<link rel="stylesheet" type="text/css" href="css/site.css">
 			<script type="text/javascript" src="js/jquery-1.11.2.js"></script>
 			<script src="js/bootstrap.min.js"></script>
-
+			 <script type="text/javascript" src="js/jquery.videoBG.js"></script>
 		</head>
 	
 	<body>
@@ -37,7 +37,16 @@
 			
 			</div>
 		</section>
-	
+	<script>
+	$(document).ready(function() {
+	$('header').videoBG({
+	mp4:'video/video.mp4',
+	webm:'video/video.webm',
+	scale:true,
+	opacity:1,
+	zIndex:0
+});})
+	</script>
 	
 	</body>
 </html>
